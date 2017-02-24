@@ -49,9 +49,8 @@ class Carreteras {
 
     @Override
     public String toString() {
-        return "Carreteras{" + "Numero_U=" + Numero_U + 
-                ", distancia=" + distancia + ", inicio=" + inicio 
-                + ", fin=" + fin + '}';
+        return  
+                "distancia=" + distancia ;
     }
     
     
