@@ -1067,7 +1067,7 @@ public class Principal extends javax.swing.JFrame {
         DefaultListModel modelo = new DefaultListModel();
         for (int i = min; i < max; i++) {
              
-                modelo.addElement(carreteras.get(i).getNumero_U());
+                modelo.addElement(carreteras.get(i).getInicio().getNombre());
                 J_list.setModel(modelo);
             
             
@@ -1203,5 +1203,5 @@ public class Principal extends javax.swing.JFrame {
     
         
 
-
+//Holis 
 }
