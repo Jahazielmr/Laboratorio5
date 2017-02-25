@@ -33,7 +33,7 @@ public class Canchas extends Lugares{
 
     @Override
     public String toString() {
-        return super.toString()+"categoria=" + categoria + ", estado=" + estado;
+        return super.toString()+"categoria:" + categoria + ", estado:" + estado;
     }
 
     

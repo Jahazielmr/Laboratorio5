@@ -50,7 +50,7 @@ class Carreteras {
     @Override
     public String toString() {
         return  
-                "distancia=" + distancia ;
+                "distancia:" + distancia ;
     }
     
     

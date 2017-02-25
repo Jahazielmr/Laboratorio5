@@ -110,7 +110,6 @@ public class Principal extends javax.swing.JFrame {
         J_list = new javax.swing.JList<>();
         jLabel21 = new javax.swing.JLabel();
         Cb = new javax.swing.JComboBox();
-        jButton8 = new javax.swing.JButton();
 
         jLabel2.setText("Nombre");
 
@@ -667,13 +666,6 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel21.setText("Lugar");
 
-        jButton8.setText("Listar en Jlist");
-        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton8MouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -681,15 +673,10 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(136, 136, 136)
-                        .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Cb, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(128, 128, 128)
-                        .addComponent(jButton8)))
+                .addGap(136, 136, 136)
+                .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Cb, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(156, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -703,9 +690,7 @@ public class Principal extends javax.swing.JFrame {
                         .addGap(77, 77, 77)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel21)
-                            .addComponent(Cb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(97, 97, 97)
-                        .addComponent(jButton8)))
+                            .addComponent(Cb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(156, Short.MAX_VALUE))
         );
 
@@ -1055,26 +1040,6 @@ public class Principal extends javax.swing.JFrame {
         Canchas.setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
 
-    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
-             Lugares m = (Lugares ) Cb.getItemAt(Cb.getSelectedIndex());
-        
-        int dist1, dist2, max, min;
-        
-        dist1 = m.getEntrada().getDistancia();
-        
-        max = dist1+50;
-        min = dist1-50;
-        DefaultListModel modelo = new DefaultListModel();
-        for (int i = min; i < max; i++) {
-             
-                modelo.addElement(carreteras.get(i).getInicio().getNombre());
-                J_list.setModel(modelo);
-            
-            
-        }
-        
-    }//GEN-LAST:event_jButton8MouseClicked
-
     
     
     /**
@@ -1152,7 +1117,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1202,6 +1166,7 @@ public class Principal extends javax.swing.JFrame {
     Lugares lugar_seleccionado;
     
         
-
+// porque tantos commits :( XD
+   //jasbdjhabdjwahjawhbdawbdawjhdbwajdbwajhwajbda
 //Holis 
 }
